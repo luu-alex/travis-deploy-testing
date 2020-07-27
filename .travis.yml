@@ -1,16 +1,4 @@
-language: node_js
-node_js:
-  - "stable"
-cache:
-  directories:
-    - node_modules
-script:
-  - npm run build
-deploy:
-  provider: pages
-  keep_history: true
-  skip_cleanup: true
-  github_token: $github_token
-  local_dir: build
-  on:
-    branch: master
+language: ruby
+rvm:
+  - 2.2
+  - jruby
